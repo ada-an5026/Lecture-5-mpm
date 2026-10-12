@@ -1,0 +1,12 @@
+README.md
+pyproject.toml
+linear_algebra/__init__.py
+linear_algebra/array_operations.py
+linear_algebra/matrix_operations.py
+mycoolpackage.egg-info/PKG-INFO
+mycoolpackage.egg-info/SOURCES.txt
+mycoolpackage.egg-info/dependency_links.txt
+mycoolpackage.egg-info/requires.txt
+mycoolpackage.egg-info/top_level.txt
+statistics/__init__.py
+statistics/statistics.py

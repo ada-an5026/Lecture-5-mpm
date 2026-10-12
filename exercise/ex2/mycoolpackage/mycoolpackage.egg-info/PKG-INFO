@@ -1,0 +1,25 @@
+Metadata-Version: 2.4
+Name: mycoolpackage
+Version: 0.1.0
+Summary: Linear algebra and statistics helpers
+Author-email: Aaditya Nair <an5026@ic.ac.uk>
+License-Expression: MIT
+Keywords: linear-algebra,statistics,teaching
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Requires-Dist: numpy
+Requires-Dist: requests>=2.31
+Requires-Dist: peppercorn
+Provides-Extra: dev
+Requires-Dist: pytest; extra == "dev"
+Requires-Dist: flake8; extra == "dev"
+
+# mycoolpackage
+
+Linear algebra and statistics helpers.
+
+## Install
+
+```bash
+pip install -e ".[dev]"
+```

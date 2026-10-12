@@ -1,0 +1,37 @@
+[build-system]
+requires = ["setuptools>=77.0.3"]  # 77.0.3+ understands the SPDX `license` field
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mycoolpackage"
+version = "0.1.0"
+description = "Linear algebra and statistics helpers"
+readme = "README.md"
+requires-python = ">=3.10"
+license = "MIT"
+keywords = ["linear-algebra", "statistics", "teaching"]
+authors = [
+  { name = "Aaditya Nair", email = "an5026@ic.ac.uk" },
+]
+
+# Packages needed at runtime (installed automatically by pip).
+dependencies = [
+  "numpy",
+  "requests>=2.31",
+  "peppercorn",
+]
+
+# Extras: `pip install -e ".[dev]"` also installs these.
+[project.optional-dependencies]
+dev = [
+  "pytest",
+  "flake8",
+]
+
+# Which packages to ship. Needed because the folder has several top-level
+# packages, so setuptools won't guess.
+[tool.setuptools]
+packages = ["linear_algebra", "statistics"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

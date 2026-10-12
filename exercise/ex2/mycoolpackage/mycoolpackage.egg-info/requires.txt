@@ -1,0 +1,7 @@
+numpy
+requests>=2.31
+peppercorn
+
+[dev]
+pytest
+flake8
